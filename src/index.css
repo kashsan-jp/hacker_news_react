@@ -169,21 +169,25 @@ button:hover {
 }
 
 @media(max-width: 420px) {
+  
   .section .title h1 {
     font-size: 1.5rem;
   }
+  /* .section .main {
+    margin: 0 auto;
+  } */
   .section .main h1{
     display: column;
     font-size: 2rem;
     
   }
   form #search{
-    width: 250px;
+    width: 300px;
     height: 30px;
     font-size: 1rem;
   }
   form button {
-    width: 250px;
+    width: 300px;
     height: 20px;
     margin-top: 1rem;
     display: flex;

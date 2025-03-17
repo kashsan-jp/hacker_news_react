@@ -37,6 +37,7 @@ function App() {
   return (
     <>
       <section className="section">
+        <h1>= <span>H</span>acker's News =</h1>
         <form autocomplte="off" onSubmit={handleSubmit}>
           <input 
             type="text" 
@@ -76,9 +77,9 @@ function App() {
             <div key={objectId}>
               <h2>{title}</h2>
               <ul>
-                <li>By {author}</li>
+                <li>By <span>{author}</span></li>
                 <li>
-                  <a href={url} target="blank" rel="noreferrer"></a>
+                  <a href={url} target="_blank" rel="noreferrer">Read Fullo Article</a>
                 </li>
               </ul>
               <p>{format(new Date(created_at), "dd MMMM yyyy")}</p>

@@ -37,17 +37,19 @@ function App() {
   return (
     <>
       <section className="section">
-        <h1>= <span>H</span>acker's News =</h1>
-        <form autocomplte="off" onSubmit={handleSubmit}>
-          <input 
-            type="text" 
-            name="search" 
-            id="search"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            placeholder="Search for something" />
-          <button>Search</button>
-        </form>
+      <div className="main">
+          <h1>= <span>H</span>acker's News =</h1>
+          <form autocomplte="off" onSubmit={handleSubmit}>
+            <input 
+              type="text" 
+              name="search" 
+              id="search"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              placeholder="Search for something" />
+            <button>Search</button>
+          </form>
+        </div>
 
         <ToastContainer 
           position="bottom-right"
@@ -66,7 +68,7 @@ function App() {
         <>
         <article className="title">
           <h1>{largeTitle.title}</h1>
-          <a href={largeTitle.url} target="blank" rel="noreferrer">ReaD Full Article</a>
+          <a href={largeTitle.url} target="_blank" rel="noreferrer">ReaD Full Article</a>
         </article>
 
         <p className="category">Category: <span>{query}</span></p>

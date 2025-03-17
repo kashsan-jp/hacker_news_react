@@ -168,7 +168,39 @@ button:hover {
   color: slategray;
 }
 
-@media(min-width: 768px) {
+@media(max-width: 420px) {
+  .section .title h1 {
+    font-size: 1.5rem;
+  }
+  .section .main h1{
+    display: column;
+    font-size: 2rem;
+    
+  }
+  form #search{
+    width: 250px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  form button {
+    width: 250px;
+    height: 20px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center;  
+    font-size: 1rem
+  }
+}
+
+@media(min-width: 420px) {
+
+  .section .title h1 {
+    font-size: 2rem;
+  }
+  form {
+    font-size: 1.5rem;
+  }
   .section .cards {
     grid-template-columns: repeat(2, 1fr);
     /* display: grid;
@@ -179,8 +211,12 @@ button:hover {
 
 
 @media(min-width: 1024px) {
+  /* .section .main {
+    font-size: 1rem
+  } */
+
   .section .title h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   form {
     display: flex;
